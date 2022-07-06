@@ -4,15 +4,15 @@ nav:
   path: /components
 ---
 
-## Foo
+## Button
 
 Demo:
 
 ```tsx
 import React from 'react';
-import { Foo } from 'suda';
+import { Button } from 'suda';
 
-export default () => <Foo title="First Demo" />;
+export default () => <Button> Button </Button>;
 ```
 
 More skills for writing demo: https://d.umijs.org/guide/basic#write-component-demo
