@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "A react component library",
   "scripts": {
-    "start": "dumi dev",
+    "dev": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build": "father-build",
