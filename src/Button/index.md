@@ -8,6 +8,6 @@ nav:
 
 Demo:
 
-<code src="./demo.tsx"></code>
+<code src="./demos/demo.tsx"></code>
 
 <API></API>
