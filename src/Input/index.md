@@ -1,8 +1,8 @@
 ---
-title: Button
+title: Input
 nav:
   path: /components
-  title: Button
+  title: Input
 ---
 
 ## Button

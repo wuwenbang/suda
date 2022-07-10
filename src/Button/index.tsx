@@ -14,11 +14,6 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
    */
   disabled?: boolean;
   /**
-   * @description 类名
-   * @default ""
-   */
-  className?: string;
-  /**
    * @description 点击事件回调函数
    */
   onClick?: MouseEventHandler<HTMLButtonElement>;
