@@ -6,6 +6,7 @@ const Demo = () => {
     <div style={{ display: 'flex', gap: 12 }}>
       <Button>Default Button </Button>
       <Button type="primary">Primary Button </Button>
+      <Button type="dashed"> Dashed Button </Button>
       <Button disabled> Disable Button </Button>
     </div>
   );
