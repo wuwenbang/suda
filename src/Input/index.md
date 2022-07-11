@@ -1,11 +1,13 @@
 ---
 title: Input
 nav:
+  title: Components
   path: /components
-  title: Input
+group:
+  title: Components
 ---
 
-## Button
+## Input
 
 Demo:
 

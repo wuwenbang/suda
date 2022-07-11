@@ -1,8 +1,10 @@
 ---
 title: Button
 nav:
+  title: Components
   path: /components
-  title: Button
+group:
+  title: Components
 ---
 
 ## Button
