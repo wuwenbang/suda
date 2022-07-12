@@ -15,7 +15,7 @@
   background-image: none;
   border: 1px solid transparent;
   border-color: #d9d9d9;
-  border-radius: 4px;
+  border-radius: 3px;
   box-shadow: 0 2px #00000004;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -44,9 +44,60 @@
     border-color: @blue-5;
   }
 }
+.suda-button-success {
+  color: white;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  background: @green-6;
+  border-color: @green-6;
+  box-shadow: 0 2px #0000000b;
+  &:hover {
+    color: white;
+    background: @green-5;
+    border-color: @green-5;
+  }
+}
+.suda-button-warning {
+  color: white;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  background: @gold-6;
+  border-color: @gold-6;
+  box-shadow: 0 2px #0000000b;
+  &:hover {
+    color: white;
+    background: @gold-5;
+    border-color: @gold-5;
+  }
+}
+.suda-button-danger {
+  color: white;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  background: @red-6;
+  border-color: @red-6;
+  box-shadow: 0 2px #0000000b;
+  &:hover {
+    color: white;
+    background: @red-5;
+    border-color: @red-5;
+  }
+}
 .suda-button-dashed {
   color: #000000d9;
   background: #fff;
   border-color: #d9d9d9;
   border-style: dashed;
+}
+
+[id^='button-base'] .suda-button {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+
+[id^='button-disabled'] .suda-button {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}
+
+[id^='button-loading'] .suda-button {
+  margin-right: 8px;
+  margin-bottom: 12px;
 }

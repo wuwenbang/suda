@@ -9,8 +9,10 @@ group:
 
 ## Button
 
-Demo:
+<code src="./demos/base.tsx" ></code>
 
-<code src="./demos/demo.tsx"></code>
+<code src="./demos/disabled.tsx"></code>
+
+<code src="./demos/loading.tsx"></code>
 
 <API></API>
