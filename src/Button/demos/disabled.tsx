@@ -4,7 +4,6 @@
  * transform: true
  */
 
-import { LoadingOutlined } from '@ant-design/icons';
 import React from 'react';
 import { Button } from 'suda';
 
