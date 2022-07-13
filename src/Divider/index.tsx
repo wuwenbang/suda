@@ -15,15 +15,17 @@ interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   dash?: boolean;
 }
 
-export default function Divider({ className, type = 'horizontal', dash }: DividerProps) {
-  console.log(dash);
-  const classnames = classNames(
-    'suda-divider',
-    `suda-divider-${type}`,
-    dash ? `suda-divider-dashed` : '',
-    className,
+export default function Divider({ className, children, type = 'horizontal', dash }: DividerProps) {
+  return (
+    <div
+      className={classNames(
+        'suda-divider',
+        `suda-divider-${type}`,
+        dash ? `suda-divider-dashed` : '',
+        className,
+      )}
+    >
+      <span>{children}</span>
+    </div>
   );
-  console.log(classnames);
-
-  return <div className={classnames}></div>;
 }
