@@ -1,0 +1,37 @@
+@import '../global.less';
+
+.suda-divider {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000d9;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  font-feature-settings: 'tnum';
+}
+.suda-divider-horizontal {
+  display: flex;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+  margin: 24px 0;
+}
+.suda-divider-vertical {
+  position: relative;
+  top: -0.06em;
+  display: inline-block;
+  height: 0.9em;
+  margin: 0 8px;
+  vertical-align: middle;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.suda-divider-dashed {
+  background: 0 0;
+  border-color: #0000000f;
+  border-style: dashed;
+  border-width: 1px 0 0;
+}
