@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, HTMLAttributes } from 'react';
+import React, { ChangeEventHandler, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import './index.less';
 
@@ -16,6 +16,8 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
    */
 }
 
-export default function Button({ className, children, ...props }: InputProps) {
+const Input: FC<InputProps> = ({ className, children, ...props }) => {
   return <input {...props} className={classNames(className, 'suda-input')} />;
-}
+};
+
+export default Input;

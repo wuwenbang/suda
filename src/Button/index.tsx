@@ -1,4 +1,4 @@
-import React, { HTMLAttributes, MouseEventHandler, ReactNode } from 'react';
+import React, { FC, HTMLAttributes, MouseEventHandler, ReactNode } from 'react';
 import classNames from 'classnames';
 import './index.less';
 import { LoadingOutlined } from '@ant-design/icons';
@@ -28,7 +28,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-export default function Button({
+const Button: FC<ButtonProps> = ({
   type,
   disabled,
   icon,
@@ -36,7 +36,7 @@ export default function Button({
   className,
   children,
   ...props
-}: ButtonProps) {
+}) => {
   return (
     <button
       {...props}
@@ -47,4 +47,6 @@ export default function Button({
       {children && <span style={{ marginLeft: icon || loading ? 8 : 0 }}> {children}</span>}
     </button>
   );
-}
+};
+
+export default Button;

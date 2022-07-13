@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import './index.less';
 
@@ -15,7 +15,7 @@ interface DividerProps extends HTMLAttributes<HTMLDivElement> {
   dash?: boolean;
 }
 
-export default function Divider({ className, children, type = 'horizontal', dash }: DividerProps) {
+const Divider: FC<DividerProps> = ({ className, children, type = 'horizontal', dash }) => {
   return (
     <div
       className={classNames(
@@ -28,4 +28,6 @@ export default function Divider({ className, children, type = 'horizontal', dash
       <span>{children}</span>
     </div>
   );
-}
+};
+
+export default Divider;
