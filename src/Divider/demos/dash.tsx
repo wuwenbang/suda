@@ -1,3 +1,9 @@
+/**
+ * title: 虚线与实线
+ * desc: 添加 dash 属性即可让分割线出于虚线状态。
+ * transform: true
+ */
+
 import React from 'react';
 import { Divider } from 'suda';
 

@@ -9,8 +9,6 @@ group:
 
 ## Input
 
-Demo:
-
 <code src="./demos/demo.tsx"></code>
 
 <API></API>

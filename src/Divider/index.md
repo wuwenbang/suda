@@ -9,8 +9,6 @@ group:
 
 ## Divider
 
-Demo:
-
-<code src="./demos/demo.tsx"></code>
+<code src="./demos/dash.tsx"></code> <code src="./demos/type.tsx"></code>
 
 <API></API>
