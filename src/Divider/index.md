@@ -1,10 +1,10 @@
 ---
-title: Divider
+title: Divider 分割线
 nav:
-  title: Components
+  title: 组件
   path: /components
 group:
-  title: Components
+  title: 布局组件
 ---
 
 ## Divider

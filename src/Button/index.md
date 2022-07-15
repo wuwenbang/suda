@@ -1,10 +1,10 @@
 ---
-title: Button
+title: Button 按钮
 nav:
-  title: Components
+  title: 组件
   path: /components
 group:
-  title: Components
+  title: 基础组件
 ---
 
 ## Button

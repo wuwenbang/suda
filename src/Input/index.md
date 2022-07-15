@@ -1,10 +1,10 @@
 ---
-title: Input
+title: Input 输入框
 nav:
-  title: Components
+  title: 组件
   path: /components
 group:
-  title: Components
+  title: 基础组件
 ---
 
 ## Input
