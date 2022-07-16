@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, HTMLAttributes } from 'react';
+import React, { CSSProperties, FC, HTMLAttributes, ReactNode } from 'react';
 import classNames from 'classnames';
 import './index.less';
 
@@ -14,8 +14,19 @@ interface LayoutProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 const Layout: FC<LayoutProps> = ({ className, children, style, ...props }) => {
+  let hasSider = false;
+  React.Children.forEach(children, (child) => {
+    const _child = child as any;
+    if (_child.props.children === 'Sider') {
+      hasSider = true;
+    }
+  });
   return (
-    <div className={classNames('suda-layout', className)} style={style} {...props}>
+    <div
+      className={classNames('suda-layout', className, hasSider ? 'suda-layout-sider' : '')}
+      style={style}
+      {...props}
+    >
       {children}
     </div>
   );

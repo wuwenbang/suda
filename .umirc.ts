@@ -3,7 +3,7 @@ import { defineConfig } from 'dumi';
 export default defineConfig({
   title: 'suda',
   favicon: 'favicon.ico',
-  logo: 'logo.png',
+  logo: './logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
   devServer: {
