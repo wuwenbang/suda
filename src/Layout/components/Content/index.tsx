@@ -15,9 +15,9 @@ interface ContentProps extends HTMLAttributes<HTMLDivElement> {
 
 const Content: FC<ContentProps> = ({ className, children, style, ...props }) => {
   return (
-    <div className={classNames('suda-content', className)} style={style} {...props}>
+    <main className={classNames('suda-content', className)} style={style} {...props}>
       {children}
-    </div>
+    </main>
   );
 };
 

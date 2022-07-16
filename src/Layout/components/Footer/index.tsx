@@ -15,9 +15,9 @@ interface FooterProps extends HTMLAttributes<HTMLDivElement> {
 
 const Footer: FC<FooterProps> = ({ className, children, style, ...props }) => {
   return (
-    <div className={classNames('suda-footer', className)} style={style} {...props}>
+    <footer className={classNames('suda-footer', className)} style={style} {...props}>
       {children}
-    </div>
+    </footer>
   );
 };
 

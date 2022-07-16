@@ -15,9 +15,9 @@ interface SiderProps extends HTMLAttributes<HTMLDivElement> {
 
 const Sider: FC<SiderProps> = ({ className, children, style, ...props }) => {
   return (
-    <div className={classNames('suda-sider', className)} style={style} {...props}>
+    <aside className={classNames('suda-sider', className)} style={style} {...props}>
       {children}
-    </div>
+    </aside>
   );
 };
 

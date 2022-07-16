@@ -15,9 +15,9 @@ interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
 
 const Header: FC<HeaderProps> = ({ className, children, style, ...props }) => {
   return (
-    <div className={classNames('suda-header', className)} style={style} {...props}>
+    <header className={classNames('suda-header', className)} style={style} {...props}>
       {children}
-    </div>
+    </header>
   );
 };
 
