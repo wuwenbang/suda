@@ -22,13 +22,13 @@ const Layout: FC<LayoutProps> = ({ className, children, style, ...props }) => {
     }
   });
   return (
-    <div
+    <section
       className={classNames('suda-layout', className, hasSider ? 'suda-layout-sider' : '')}
       style={style}
       {...props}
     >
       {children}
-    </div>
+    </section>
   );
 };
 
