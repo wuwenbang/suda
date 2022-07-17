@@ -8,7 +8,7 @@ group:
   order: 2
 ---
 
-## Divider
+## Divider 分割线
 
 <code src="./demos/dash.tsx"></code> <code src="./demos/type.tsx"></code>
 
