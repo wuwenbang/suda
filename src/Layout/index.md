@@ -5,6 +5,7 @@ nav:
   path: /components
 group:
   title: 布局组件
+  order: 2
 ---
 
 ## Layout
