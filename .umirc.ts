@@ -6,7 +6,6 @@ export default defineConfig({
   logo: './logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
-  mfsu: {},
   devServer: {
     port: 1998, // 自定义端口号
   },
