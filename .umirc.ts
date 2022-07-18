@@ -1,7 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  title: 'suda',
+  title: 'Suda',
   favicon: 'favicon.ico',
   logo: './logo.png',
   outputPath: 'docs-dist',
@@ -9,6 +9,13 @@ export default defineConfig({
   devServer: {
     port: 1998, // 自定义端口号
   },
+  navs: [
+    null,
+    {
+      title: 'Github',
+      path: 'https://github.com/wuwenbang/suda',
+    },
+  ],
   apiParser: {
     // 自定义属性过滤配置，也可以是一个函数，用法参考：https://github.com/styleguidist/react-docgen-typescript/#propfilter
     propFilter: {
