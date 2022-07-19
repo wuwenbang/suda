@@ -3,7 +3,9 @@ hero:
   title: Suda
   desc: 一套易用的轻量级的React UI 组件库
   actions:
-    - text: 查看文档
+    - text: 阅读文档
+      link: /guide
+    - text: 查看组件
       link: /components
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png

@@ -1,0 +1,28 @@
+---
+title: 快速开始
+nav:
+  title: 文档
+  path: /guide
+---
+
+## 安装
+
+使用 npm 安装
+
+```bash
+npm install suda
+```
+
+使用 yarn 安装
+
+```bash
+yarn add suda
+```
+
+## 示例
+
+```ts
+import { Button } from 'suda';
+
+ReactDOM.render(<Button />, mountNode);
+```
