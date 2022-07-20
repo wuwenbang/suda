@@ -22,7 +22,8 @@ yarn add suda
 ## 示例
 
 ```ts
+import ReactDOM from 'react-dom/client';
 import { Button } from 'suda';
 
-ReactDOM.render(<Button />, mountNode);
+ReactDOM.createRoot(document.getElementById('root')!).render(<Button />);
 ```
