@@ -19,6 +19,10 @@ interface SpaceProps extends HTMLAttributes<HTMLDivElement> {
    * @default false
    */
   wrap?: boolean;
+  /**
+   * @description 对齐方式
+   */
+  align?: 'start' | 'end' | 'center' | 'baseline';
 }
 
 const Space: FC<SpaceProps> = ({
@@ -27,6 +31,7 @@ const Space: FC<SpaceProps> = ({
   direction = 'horizontal',
   wrap = false,
   size = 'small',
+  align,
 }) => {
   const gap = useMemo(() => {
     if (size === 'small') return wrap ? `8px 16px` : `8px`;
@@ -35,8 +40,17 @@ const Space: FC<SpaceProps> = ({
     else return wrap ? `${size}px 16px` : `${size}px`;
   }, [size, wrap]);
   const style = wrap ? { gap: gap, flexWrap: 'wrap' as const } : { gap: gap };
+
   return (
-    <div className={classNames('suda-space', `suda-space-${direction}`, className)} style={style}>
+    <div
+      className={classNames(
+        'suda-space',
+        `suda-space-${direction}`,
+        align ? `suda-space-align-${align}` : '',
+        className,
+      )}
+      style={style}
+    >
       {children}
     </div>
   );

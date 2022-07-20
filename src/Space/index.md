@@ -18,4 +18,6 @@ group:
 
 <code src="./demos/wrap.tsx"></code>
 
+<code src="./demos/align.tsx"></code>
+
 <API></API>
