@@ -1,7 +1,7 @@
 ---
 hero:
   title: Suda
-  desc: 一套易用的轻量级的React UI 组件库
+  desc: 一个易用的轻量级的 React UI 组件库
   actions:
     - text: 阅读文档
       link: /guide
