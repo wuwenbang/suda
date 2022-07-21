@@ -13,7 +13,17 @@ interface TagProps extends HTMLAttributes<HTMLSpanElement> {
   color?: string;
 }
 
+const colorPresetMap = new Map([
+  ['success', '#52c41a'],
+  ['processing', '#1890ff'],
+  ['warning', '#faad14'],
+  ['error', '#ff4d4f'],
+]);
+
 const Tag: FC<TagProps> = ({ className, children, color, icon, ...props }) => {
+  if (color && colorPresetMap.has(color)) {
+    color = colorPresetMap.get(color);
+  }
   return (
     <span
       {...props}
