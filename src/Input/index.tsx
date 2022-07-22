@@ -12,12 +12,20 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
    */
   onChange?: ChangeEventHandler<HTMLInputElement>;
   /**
-   * @description 输入框内容变化时的回调函数
+   * @description 禁止输入框
+   * @default false
    */
+  disabled?: boolean;
 }
 
-const Input: FC<InputProps> = ({ className, children, ...props }) => {
-  return <input {...props} className={classNames(className, 'suda-input')} />;
+const Input: FC<InputProps> = ({ className, children, disabled, ...props }) => {
+  return (
+    <input
+      disabled={disabled}
+      className={classNames(className, 'suda-input', disabled ? 'suda-input-disabled' : '')}
+      {...props}
+    />
+  );
 };
 
 export default Input;
