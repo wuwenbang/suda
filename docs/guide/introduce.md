@@ -1,9 +1,16 @@
 ---
 title: 快速开始
+order: 1
 nav:
   title: 文档
   path: /guide
 ---
+
+![NPM](https://img.shields.io/npm/l/suda?style=flat-square) &nbsp; ![npm](https://img.shields.io/npm/v/suda?style=flat-square) &nbsp; ![npm](https://img.shields.io/npm/dt/suda?style=flat-square)
+
+## 介绍
+
+Suda 是一个易用的轻量级的 React UI 组件库。
 
 ## 安装
 

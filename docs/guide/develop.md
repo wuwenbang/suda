@@ -1,3 +1,11 @@
+---
+title: 开发文档
+order: 2
+nav:
+  title: 文档
+  path: /guide
+---
+
 # Suda
 
 ## Getting Started
