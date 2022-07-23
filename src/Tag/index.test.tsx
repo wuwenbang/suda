@@ -7,6 +7,6 @@ describe('<Tag />', () => {
   it('Render Tag', () => {
     const msg = 'Test Message';
     render(<Tag>{msg}</Tag>);
-    expect(screen.getByDisplayValue(msg)).toBeInTheDocument();
+    expect(screen.queryByText(msg)).toBeInTheDocument();
   });
 });
