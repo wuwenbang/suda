@@ -26,3 +26,7 @@ import { Button } from 'suda';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(<Button />);
 ```
+
+## 文档链接
+
+[点击进入文档站点](https://wuwenbang.github.io/suda/)
