@@ -1,0 +1,19 @@
+@import '../../../global.less';
+
+.suda-checkbox-wrapper {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+  .suda-checkbox-disabled {
+    cursor: not-allowed;
+  }
+  .suda-checkbox {
+    .suda-checkbox-inner {
+      transition: all 0.3s;
+    }
+    .suda-checkbox-input {
+      cursor: inherit;
+    }
+  }
+}
