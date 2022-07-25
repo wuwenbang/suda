@@ -1,0 +1,19 @@
+@import '../../../global.less';
+
+.suda-radio-wrapper {
+  display: inline-flex;
+  gap: 2px;
+  align-items: center;
+  cursor: pointer;
+  .suda-radio-disabled {
+    cursor: not-allowed;
+  }
+  .suda-radio {
+    .suda-radio-inner {
+      transition: all 0.3s;
+    }
+    .suda-radio-input {
+      cursor: inherit;
+    }
+  }
+}
