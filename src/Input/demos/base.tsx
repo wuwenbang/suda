@@ -1,5 +1,5 @@
 /**
- * title: 基本使用
+ * title: 使用与禁用
  * desc: 输入框的使用与禁用。
  * transform: true
  */

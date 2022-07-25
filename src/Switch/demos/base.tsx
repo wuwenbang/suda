@@ -1,6 +1,6 @@
 /**
- * title: 基本使用
- * desc: 开关的基本使用方式。
+ * title: 使用与禁用
+ * desc: 开关的使用与禁用。
  * transform: true
  */
 import React from 'react';
