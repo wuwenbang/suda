@@ -12,4 +12,24 @@ group:
 
 <code src="./demos/base.tsx"></code>
 
-<API></API>
+## API
+
+### Layout
+
+<API hideTitle src="./components/Layout/index.tsx"></API>
+
+### Layout.Header
+
+<API hideTitle src="./components/Header/index.tsx"></API>
+
+### Layout.Content
+
+<API hideTitle src="./components/Content/index.tsx"></API>
+
+### Layout.Footer
+
+<API hideTitle src="./components/Footer/index.tsx"></API>
+
+### Layout.Sider
+
+<API hideTitle src="./components/Sider/index.tsx"></API>
