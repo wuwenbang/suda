@@ -1,3 +1,8 @@
+/**
+ * title: 基本使用
+ * desc: 输入框的使用与禁用。
+ * transform: true
+ */
 import React from 'react';
 import { Input, Space } from 'suda';
 

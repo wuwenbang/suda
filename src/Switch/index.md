@@ -1,5 +1,5 @@
 ---
-title: Input 输入框
+title: Switch 开关
 nav:
   title: 组件
   path: /components
@@ -8,7 +8,7 @@ group:
   order: 1
 ---
 
-## Input 输入框
+## Switch 开关
 
 <code src="./demos/base.tsx"></code>
 
