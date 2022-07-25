@@ -19,7 +19,6 @@ const Radio: FC<RadioProps> = ({ className, children, disabled, value, ...props 
   const radioContext = useContext(RadioGroupContext);
   const radioValue = radioContext?.value;
   const onRadioChange = radioContext?.onChange;
-  console.log('radioValue', radioValue);
   return (
     <label className={classNames(className, 'suda-radio-wrapper')} {...props}>
       <RcCheckbox
