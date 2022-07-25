@@ -34,6 +34,7 @@ const RadioGroup: FC<RadioGroupProps> = ({
   const [radioValue, setRadioValue] = useState(defaultValue);
   const onRadioChange = (value: any) => {
     setRadioValue(value);
+    onChange?.(value);
   };
   return (
     <RadioGroupContext.Provider
