@@ -1,0 +1,48 @@
+@import '../../../global.less';
+
+.suda-list {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000000d9;
+  font-size: 14px;
+  line-height: 1.5715;
+  list-style: none;
+  &-bordered {
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+  }
+  &-large {
+    .suda-list-item,
+    .suda-list-header,
+    .suda-list-footer {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+  &-middle {
+    .suda-list-item,
+    .suda-list-header,
+    .suda-list-footer {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
+  &-small {
+    .suda-list-item,
+    .suda-list-header,
+    .suda-list-footer {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+  .suda-list-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+  .suda-list-header,
+  .suda-list-footer {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}

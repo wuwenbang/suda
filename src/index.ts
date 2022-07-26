@@ -3,6 +3,7 @@ export { default as Checkbox } from './Checkbox';
 export { default as Divider } from './Divider';
 export { default as Input } from './Input';
 export { default as Layout } from './Layout';
+export { default as List } from './List';
 export { default as Radio } from './Radio';
 export { default as Select } from './Select';
 export { default as Space } from './Space';
