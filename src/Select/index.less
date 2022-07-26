@@ -19,8 +19,9 @@
   position: relative;
   display: inline-block;
   width: 100px;
-  font-size: 12px;
-
+  font-size: 16px;
+  border: 1px solid @gray-5;
+  cursor: pointer;
   &-disabled {
     &,
     & input {
@@ -44,7 +45,6 @@
         border-bottom-color: transparent;
         border-radius: 100%;
         transform: none;
-
         animation: rcSelectLoadingIcon 0.5s infinite;
       }
     }
@@ -59,7 +59,6 @@
   // ============== Search ===============
   .@{select-prefix}-selection-search-input {
     appearance: none;
-
     &::-webkit-search-cancel-button {
       display: none;
       appearance: none;
@@ -71,20 +70,21 @@
     .@{select-prefix}-selector {
       position: relative;
       display: flex;
-
+      padding: 4px;
       .@{select-prefix}-selection-search {
         width: 100%;
 
         &-input {
           width: 100%;
+          cursor: pointer;
         }
       }
 
       .@{select-prefix}-selection-item,
       .@{select-prefix}-selection-placeholder {
         position: absolute;
-        top: 1px;
-        left: 3px;
+        top: 5px;
+        left: 5px;
         pointer-events: none;
       }
     }
@@ -92,9 +92,6 @@
     // Not customize
     &:not(.@{select-prefix}-customize-input) {
       .@{select-prefix}-selector {
-        padding: 1px;
-        border: 1px solid #000;
-
         .search-input-without-border();
       }
     }
@@ -203,7 +200,7 @@
     position: absolute;
     min-height: 100px;
     background: #fff;
-    border: 1px solid green;
+    border: 1px solid @gray-4;
 
     &-hidden {
       display: none;
@@ -226,21 +223,22 @@
     // >>> Option
     &-option {
       position: relative;
-
+      cursor: pointer;
       &-grouped {
         padding-left: 24px;
       }
 
       .@{select-prefix}-item-option-state {
-        position: absolute;
-        top: 4px;
-        right: 0;
-        pointer-events: none;
+        display: none;
+        // position: absolute;
+        // top: 4px;
+        // right: 0;
+        // pointer-events: none;
       }
 
       // ------- Active -------
       &-active {
-        background: #ddd;
+        background: @gray-4;
       }
 
       // ------ Disabled ------
