@@ -55,4 +55,4 @@ const CheckboxGroup: FC<CheckboxGroupProps> = ({
   );
 };
 
-export default CheckboxGroup;
+export default React.memo(CheckboxGroup);

@@ -34,4 +34,4 @@ const Radio: FC<RadioProps> = ({ className, children, disabled, value, ...props 
   );
 };
 
-export default Radio;
+export default React.memo(Radio);

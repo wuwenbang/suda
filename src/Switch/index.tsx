@@ -58,4 +58,4 @@ const Switch: FC<SwitchProps> = ({
   );
 };
 
-export default Switch;
+export default React.memo(Switch);

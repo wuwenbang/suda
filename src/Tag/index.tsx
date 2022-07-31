@@ -42,4 +42,4 @@ const Tag: FC<TagProps> = ({ className, children, color, icon, ...props }) => {
   );
 };
 
-export default Tag;
+export default React.memo(Tag);

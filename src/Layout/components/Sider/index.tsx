@@ -21,4 +21,4 @@ const Sider: FC<SiderProps> = ({ className, children, style, ...props }) => {
   );
 };
 
-export default Sider;
+export default React.memo(Sider);

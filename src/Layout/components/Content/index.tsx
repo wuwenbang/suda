@@ -21,4 +21,4 @@ const Content: FC<ContentProps> = ({ className, children, style, ...props }) => 
   );
 };
 
-export default Content;
+export default React.memo(Content);

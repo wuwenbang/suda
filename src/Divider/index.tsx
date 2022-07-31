@@ -30,4 +30,4 @@ const Divider: FC<DividerProps> = ({ className, children, type = 'horizontal', d
   );
 };
 
-export default Divider;
+export default React.memo(Divider);

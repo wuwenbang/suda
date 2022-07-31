@@ -34,4 +34,4 @@ const Checkbox: FC<CheckboxProps> = ({ className, children, disabled, value, ...
   );
 };
 
-export default Checkbox;
+export default React.memo(Checkbox);

@@ -58,4 +58,4 @@ function List<T>({
   );
 }
 
-export default List;
+export default React.memo(List);

@@ -47,4 +47,4 @@ const RadioGroup: FC<RadioGroupProps> = ({
   );
 };
 
-export default RadioGroup;
+export default React.memo(RadioGroup);

@@ -56,4 +56,4 @@ const Space: FC<SpaceProps> = ({
   );
 };
 
-export default Space;
+export default React.memo(Space);

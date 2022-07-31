@@ -32,4 +32,4 @@ const Layout: FC<LayoutProps> = ({ className, children, style, ...props }) => {
   );
 };
 
-export default Layout;
+export default React.memo(Layout);
