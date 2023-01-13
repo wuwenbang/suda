@@ -1,4 +1,4 @@
-import React, { CSSProperties, FC, HTMLAttributes, ReactNode } from 'react';
+import React, { CSSProperties, FC, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import './index.less';
 

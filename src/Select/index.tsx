@@ -22,4 +22,4 @@ const Select = InternalSelect as SelectType;
 
 Select.Option = Option;
 
-export default React.memo(Select);
+export default Select;
