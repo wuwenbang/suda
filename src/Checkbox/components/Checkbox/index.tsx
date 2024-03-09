@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, FC, HTMLAttributes, useContext } from 'react';
+import React, { FC, HTMLAttributes, useContext } from 'react';
 import classNames from 'classnames';
 import './index.less';
 import { CheckboxGroupContext } from '../CheckboxGroup';
