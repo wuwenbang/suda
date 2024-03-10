@@ -10,3 +10,4 @@ export { default as Space } from './Space';
 export { default as Switch } from './Switch';
 export { default as Tag } from './Tag';
 export { default as Card } from './Card';
+export { default as Price } from './Price';
