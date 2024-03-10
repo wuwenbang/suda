@@ -20,15 +20,16 @@ const colorPresetMap = new Map([
   ['error', '#ff4d4f'],
 ]);
 
-const Tag: FC<TagProps> = ({ className, children, color, icon, ...props }) => {
+const Tag: FC<TagProps> = ({ className, children, color, icon, style, ...props }) => {
   if (color && colorPresetMap.has(color)) {
     color = colorPresetMap.get(color);
   }
+  const colorStyle = color ? { color: 'white', background: color, borderColor: color } : {};
   return (
     <span
       {...props}
       className={classNames(className, 'suda-tag')}
-      style={color ? { color: 'white', background: color, borderColor: color } : {}}
+      style={{ ...colorStyle, ...style }}
     >
       {icon ? (
         <>
@@ -42,4 +43,4 @@ const Tag: FC<TagProps> = ({ className, children, color, icon, ...props }) => {
   );
 };
 
-export default React.memo(Tag);
+export default Tag;
