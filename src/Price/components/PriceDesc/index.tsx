@@ -7,15 +7,15 @@ interface PriceDescProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * @description 价格描述
    */
-  desc?: string;
+  value?: string;
 }
 
-const PriceDesc: FC<PriceDescProps> = ({ className, desc, ...props }) => {
+const PriceDesc: FC<PriceDescProps> = ({ className, value, ...props }) => {
   const context = useContext(PriceContext);
-  const value = desc ?? context.desc;
+  const text = value ?? context.desc;
   return (
     <span className={classNames('suda-price-desc', className)} {...props}>
-      {value}
+      {text}
     </span>
   );
 };

@@ -8,17 +8,17 @@ import PriceDesc from './components/PriceDesc';
 type PriceLayoutType = typeof PriceLayout;
 
 interface PriceType extends PriceLayoutType {
-  PriceCurrency: typeof PriceCurrency;
-  PriceValue: typeof PriceValue;
-  PriceDeletion: typeof PriceDeletion;
-  PriceDesc: typeof PriceDesc;
+  Currency: typeof PriceCurrency;
+  Value: typeof PriceValue;
+  Deletion: typeof PriceDeletion;
+  Desc: typeof PriceDesc;
 }
 
 const Price = PriceLayout as PriceType;
 
-Price.PriceCurrency = PriceCurrency;
-Price.PriceValue = PriceValue;
-Price.PriceDeletion = PriceDeletion;
-Price.PriceDesc = PriceDesc;
+Price.Currency = PriceCurrency;
+Price.Value = PriceValue;
+Price.Deletion = PriceDeletion;
+Price.Desc = PriceDesc;
 
 export default Price;

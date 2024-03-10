@@ -5,17 +5,17 @@ import { PriceContext } from '../PriceLayout';
 
 interface PriceCurrencyProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
-   * @description 货币
+   * @description 货币符号
    */
-  currency?: number;
+  value?: string;
 }
 
-const PriceCurrency: FC<PriceCurrencyProps> = ({ className, currency, ...props }) => {
+const PriceCurrency: FC<PriceCurrencyProps> = ({ className, value, ...props }) => {
   const context = useContext(PriceContext);
-  const value = currency ?? context.currency ?? '¥';
+  const text = value ?? context.currency ?? '¥';
   return (
     <span className={classNames('suda-price-currency', className)} {...props}>
-      {value}
+      {text}
     </span>
   );
 };

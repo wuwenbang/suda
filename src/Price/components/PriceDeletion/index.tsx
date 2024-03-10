@@ -7,16 +7,17 @@ interface PriceDeletionProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * @description 删除价格
    */
-  deletion?: string;
+  value?: string;
 }
 
-const PriceDeletion: FC<PriceDeletionProps> = ({ className, deletion, ...props }) => {
+const PriceDeletion: FC<PriceDeletionProps> = ({ className, value, ...props }) => {
   const context = useContext(PriceContext);
-  const value = deletion ?? context.deletion;
+  const deletion = value ?? context.deletion ?? '';
   const currency = context.currency ?? '';
+  const text = currency + deletion;
   return (
     <span className={classNames('suda-price-deletion', className)} {...props}>
-      {currency + value}
+      {text}
     </span>
   );
 };

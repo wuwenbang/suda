@@ -9,11 +9,11 @@ import { Price } from 'suda';
 const Demo = () => {
   return (
     <Price price="90" currency="¥" desc="起" deletion="100" style={{ flexDirection: 'column' }}>
-      <Price.PriceDeletion />
+      <Price.Deletion />
       <div>
-        <Price.PriceCurrency />
-        <Price.PriceValue />
-        <Price.PriceDesc />
+        <Price.Currency />
+        <Price.Value />
+        <Price.Desc />
       </div>
     </Price>
   );

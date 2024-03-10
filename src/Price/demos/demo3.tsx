@@ -9,10 +9,9 @@ import { Price, Tag } from 'suda';
 const Demo = () => {
   return (
     <Price price="90" currency="¥" desc="起" deletion="100">
-      <Price.PriceDeletion />
-      <Price.PriceCurrency style={{ color: 'orange' }} />
-      <Price.PriceValue style={{ color: 'orange' }} />
-      <Price.PriceDesc style={{ color: 'orange', marginRight: 4 }} />
+      <Price.Desc value="低至" style={{ color: 'orange' }} />
+      <Price.Currency style={{ color: 'orange' }} />
+      <Price.Value style={{ color: 'orange', marginRight: 4 }} />
       <Tag color="#ff5500">超值特惠</Tag>
     </Price>
   );

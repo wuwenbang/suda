@@ -7,15 +7,15 @@ interface PriceValueProps extends HTMLAttributes<HTMLHeadingElement> {
   /**
    * @description 当前价格
    */
-  price?: string;
+  value?: string;
 }
 
-const PriceValue: FC<PriceValueProps> = ({ className, price, ...props }) => {
+const PriceValue: FC<PriceValueProps> = ({ className, value, ...props }) => {
   const context = useContext(PriceContext);
-  const value = price ?? context.price ?? '0';
+  const text = value ?? context.price ?? '0';
   return (
     <span className={classNames('suda-price-value', className)} {...props}>
-      {value}
+      {text}
     </span>
   );
 };
